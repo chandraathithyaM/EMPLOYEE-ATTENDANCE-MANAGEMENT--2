@@ -17,7 +17,8 @@ public class CorsConfig {
                 "http://localhost:5175",
                 "https://employee-attendance-management-beryl.vercel.app",
                 "https://employee-attendance-management-ii.vercel.app",
-                "https://employee-attendance-management-2-production.up.railway.app"
+                "https://employee-attendance-management-2-production.up.railway.app",
+                "https://employee-attendance-management-2.vercel.app"
         ));
         config.setAllowedMethods(List.of("GET", "POST", "PUT", "DELETE", "OPTIONS"));
         config.setAllowedHeaders(List.of("*"));
