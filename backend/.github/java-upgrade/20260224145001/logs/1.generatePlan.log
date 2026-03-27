@@ -1,0 +1,7 @@
+2026-02-24T14:50:01.840Z [INFO] Initializing project configuration...
+2026-02-24T14:50:01.840Z [INFO] Project d:\employee\backend is a maven project, try to get java version from pom.xml
+2026-02-24T14:50:01.843Z [INFO] Project java version: 17
+2026-02-24T14:50:01.844Z [INFO] Maven project detected.
+2026-02-24T14:50:01.845Z [INFO] Build tool type: mvn
+2026-02-24T14:50:01.871Z [ERROR] JDK is not provided or detected for Java 17.
+2026-02-24T14:55:13.663Z [ERROR] Failed to prepare project configuration or init upgrade options: terminated.

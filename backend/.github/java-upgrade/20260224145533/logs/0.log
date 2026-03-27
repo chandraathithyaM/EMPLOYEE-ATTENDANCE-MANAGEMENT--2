@@ -1,0 +1,26 @@
+2026-02-24T14:55:33.315Z [INFO] ----------------------invoke generate_upgrade_plan----------------------
+2026-02-24T14:55:33.315Z [INFO] [Tool.invoke]({name: generate_upgrade_plan, input: {
+  "projectPath": "d:/employee/backend",
+  "javaVersion": "17",
+  "targetJavaVersion": "21",
+  "useCurrentBranch": false
+}}).
+2026-02-24T14:55:33.316Z [INFO] [Plan.tryStartTask]({tool:generate_upgrade_plan, nextTask:{type:undefined, tool:undefined}}
+2026-02-24T14:55:33.316Z [INFO] [Plan.tryStartTask]: no next task, create new one.
+2026-02-24T14:55:33.316Z [INFO] [Plan.createTaskAtStart]({tool: generate_upgrade_plan, input: {
+  "projectPath": "d:/employee/backend",
+  "javaVersion": "17",
+  "targetJavaVersion": "21",
+  "useCurrentBranch": false,
+  "sessionId": "20260224145533"
+}}).
+2026-02-24T14:55:33.316Z [INFO] [Plan.tryStartTask]: starting task generatePlan
+2026-02-24T14:55:33.317Z [INFO] [Task.start](): Starting task generatePlan
+2026-02-24T14:55:33.317Z [INFO] [Task.start](1): Started task generatePlan
+2026-02-24T14:55:33.322Z [INFO] [Tool.invoke] validate GitHub Copilot license.
+2026-02-24T14:55:33.323Z [INFO] [Tool.invoke] do pre-invoke.
+2026-02-24T14:55:33.323Z [INFO] [Tool.invoke] do invoke.
+2026-02-24T14:56:35.140Z [ERROR] [Tool.invoke] error occurs when invoking tool generate_upgrade_plan: UserError: Failed to prepare project configuration or init upgrade options: No upgrade goals set. Please set at least one upgrade goal, e.g. upgrade to Java 21, upgrade Spring Boot to 3.2.12, etc.. Please check the project configuration and try again..
+2026-02-24T14:56:35.140Z [INFO] [Task.complete](1): Completing task generatePlan
+2026-02-24T14:56:35.141Z [INFO] ----------------------invoked generate_upgrade_plan----------------------
+2026-02-24T14:56:35.141Z [INFO] [Task.complete](1): Completed task generatePlan

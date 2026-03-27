@@ -1,0 +1,71 @@
+2026-02-24T14:50:01.832Z [INFO] ----------------------invoke generate_upgrade_plan----------------------
+2026-02-24T14:50:01.832Z [INFO] [Tool.invoke]({name: generate_upgrade_plan, input: {
+  "projectPath": "d:\\employee\\backend",
+  "javaVersion": "17",
+  "targetJavaVersion": "21",
+  "useCurrentBranch": false
+}}).
+2026-02-24T14:50:01.833Z [INFO] [Plan.tryStartTask]({tool:generate_upgrade_plan, nextTask:{type:undefined, tool:undefined}}
+2026-02-24T14:50:01.833Z [INFO] [Plan.tryStartTask]: no next task, create new one.
+2026-02-24T14:50:01.833Z [INFO] [Plan.createTaskAtStart]({tool: generate_upgrade_plan, input: {
+  "projectPath": "d:\\employee\\backend",
+  "javaVersion": "17",
+  "targetJavaVersion": "21",
+  "useCurrentBranch": false,
+  "sessionId": "20260224145001"
+}}).
+2026-02-24T14:50:01.833Z [INFO] [Plan.tryStartTask]: starting task generatePlan
+2026-02-24T14:50:01.834Z [INFO] [Task.start](): Starting task generatePlan
+2026-02-24T14:50:01.834Z [INFO] [Task.start](1): Started task generatePlan
+2026-02-24T14:50:01.839Z [INFO] [Tool.invoke] validate GitHub Copilot license.
+2026-02-24T14:50:01.839Z [INFO] [Tool.invoke] do pre-invoke.
+2026-02-24T14:50:01.839Z [INFO] [Tool.invoke] do invoke.
+2026-02-24T14:50:01.885Z [INFO] [Task.start](): Starting task generatePlan
+2026-02-24T14:50:01.886Z [INFO] [Task.start](1.1): Started task generatePlan
+2026-02-24T14:50:01.887Z [INFO] ---------------------prepare install_jdk----------------------
+2026-02-24T14:50:01.887Z [INFO] [Tool.prepareInvocation]({name: install_jdk, input: {
+  "sessionId": "20260224145001",
+  "version": "17",
+  "dest": "C:\\Users\\chandra athithya m\\.jdk",
+  "reason": "JDK 17 is required to build the project, but not found on the machine."
+}}).
+2026-02-24T14:50:01.887Z [INFO] [Tool.prepareInvocation] do prepare invocation.
+2026-02-24T14:50:03.711Z [INFO] [Tool.prepareInvocation]({result: {
+  "invocationMessage": "Download and install JDK",
+  "confirmationMessages": {
+    "title": "Download and install JDK",
+    "message": "\nJDK 17 is required to build the project, but not found on the machine.\nThis tool will download and install JDK 17 from Microsoft with below settings.\n- **Version**: 17\n- **Vendor**: Microsoft\n- **Url**: https://aka.ms/download-jdk/microsoft-jdk-17.0.16-windows-x64.zip\n- **Destination**: `C:\\Users\\chandra athithya m\\.jdk`\n- **Checksum**: SHA256: 53f0c9ec64811a9ab968747076653e5500115db7230d244e4ec53577ca5ec8fc\n- **Signature**: https://aka.ms/download-jdk/microsoft-jdk-17.0.16-windows-x64.zip.sig\n- **Public Key**: http://aka.ms/microsoft_jdk_public_key\n"
+  }
+}}).
+2026-02-24T14:50:03.723Z [INFO] ----------------------prepared install_jdk----------------------
+2026-02-24T14:50:07.778Z [INFO] ----------------------invoke install_jdk----------------------
+2026-02-24T14:50:07.778Z [INFO] [Tool.invoke]({name: install_jdk, input: {
+  "sessionId": "20260224145001",
+  "version": "17",
+  "dest": "C:\\Users\\chandra athithya m\\.jdk",
+  "reason": "JDK 17 is required to build the project, but not found on the machine."
+}}).
+2026-02-24T14:50:07.778Z [INFO] [Plan.tryStartTask]({tool:install_jdk, nextTask:{type:undefined, tool:undefined}}
+2026-02-24T14:50:07.779Z [INFO] [Plan.tryStartTask]: no next task, create new one.
+2026-02-24T14:50:07.779Z [INFO] [Plan.createTaskAtStart]({tool: install_jdk, input: {
+  "sessionId": "20260224145001",
+  "version": "17",
+  "dest": "C:\\Users\\chandra athithya m\\.jdk",
+  "reason": "JDK 17 is required to build the project, but not found on the machine."
+}}).
+2026-02-24T14:50:07.779Z [INFO] [Plan.tryStartTask]: starting task detached
+2026-02-24T14:50:07.779Z [INFO] [Task.start](): Starting task detached
+2026-02-24T14:50:07.779Z [INFO] [Task.start](): Started task detached
+2026-02-24T14:50:07.779Z [INFO] [Tool.invoke] validate GitHub Copilot license.
+2026-02-24T14:50:07.779Z [INFO] [Tool.invoke] do pre-invoke.
+2026-02-24T14:50:07.779Z [INFO] [Tool.invoke] do invoke.
+2026-02-24T14:55:13.633Z [ERROR] [Tool.invoke] error occurs when invoking tool install_jdk: TypeError: terminated.
+2026-02-24T14:55:13.634Z [INFO] [Task.complete](): Completing task detached
+2026-02-24T14:55:13.635Z [INFO] ----------------------invoked install_jdk----------------------
+2026-02-24T14:55:13.636Z [INFO] [Task.complete](): Completed task detached
+2026-02-24T14:55:13.661Z [INFO] [Task.complete](1.1): Completing task generatePlan
+2026-02-24T14:55:13.663Z [INFO] [Task.complete](1.1): Completed task generatePlan
+2026-02-24T14:55:13.663Z [ERROR] [Tool.invoke] error occurs when invoking tool generate_upgrade_plan: UserError: Failed to prepare project configuration or init upgrade options: terminated. Please check the project configuration and try again..
+2026-02-24T14:55:13.664Z [INFO] [Task.complete](1): Completing task generatePlan
+2026-02-24T14:55:13.664Z [INFO] ----------------------invoked generate_upgrade_plan----------------------
+2026-02-24T14:55:13.664Z [INFO] [Task.complete](1): Completed task generatePlan
